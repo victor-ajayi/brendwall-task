@@ -33,11 +33,11 @@ export function DeleteIcon({
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      width={size ? size : 24}
-      height={size ? size : 24}
+      width={size ? size : 20}
+      height={size ? size : 20}
       color={"#000000"}
       fill={"none"}
-      className={`hover:text-[#FE0925] cursor-pointer transition-all duration-200 rounded-full ${className}`}
+      className={`cursor-pointer transition-all duration-200 rounded-full ${className}`}
       onClick={() => {
         handleDelete(productID);
       }}
