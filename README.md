@@ -1,4 +1,4 @@
-# Brendwall Техническое задание
+# Brendwall техническое задание
 
 ##  Требования
 
@@ -10,19 +10,19 @@
 
 ## 1. Настройка бэкенда (Django)
 
-### Шаг 1: Клонирование репозитория
+### Клонирование репозитория
 ```bash
 git clone https://github.com/victor-ajayi/brendwall-task
 cd brendwall-task/backend
 ```
 
-### Шаг 2: Создание и активация виртуального окружения
+### Создание и активация виртуального окружения
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # В Windows: venv\Scripts\activate
 ```
 
-### Шаг 3: Установка зависимостей
+### Установка зависимостей
 ```bash
 pip install -r requirements.txt
 ```
@@ -32,29 +32,26 @@ pip install -r requirements.txt
    python manage.py migrate
    ```
 
-### Шаг 6: Запуск Django-сервера
+### Запуск Django-сервера
 ```bash
 python manage.py runserver
 ```
 
-Бэкенд будет доступен по адресу: **`http://127.0.0.1:8000`**
-
 ---
 
-## 2. Настройка фронтенда
-Необходимо установить зависимости используя **npm**:
+## 2. Запуск приложения
+Необходимо сначала установить зависимости используя **npm**:
 ```bash
 npm install
 ```
 
-### Шаг 4: Запуск сервера
-1. Запустите **Django сервер**:
+Затем запустить **Django сервер**:
    ```bash
    cd api
    python manage.py runserver
    ```
 
-2. В новом терминале запустите **фронтенд**:
+В новом терминале запустите **фронтенд**:
    ```bash
    cd frontend
    npm run dev
@@ -62,4 +59,4 @@ npm install
 
 ---
 
-Приложение готово к запуску!
+Приложение готово! Оно будет доступно по URL: **`http://127.0.0.1:3000`**
